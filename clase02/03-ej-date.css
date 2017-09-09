@@ -1,0 +1,30 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url(img/navidad.jpeg);
+	background-size: cover;
+}
+
+div.contenedor {
+	width: 80vw;
+	height: 100vh;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+div.fecha {
+	background-color: white;
+	font-size: 30px;
+	line-height: 120px;
+	width: 200px;
+	text-align: center;
+	font-family: Tahoma;
+	border: 3px solid red;
+	transition: box-shadow 300ms
+}
