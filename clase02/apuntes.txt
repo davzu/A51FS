@@ -1,0 +1,8 @@
+keycode.info
+página para saber los códigos de la tecla, tener consideración con la letra ñ, no siempre va a ser igual, depende del teclado.
+
+undefined es tomado como false en un info
+
+cuando se use el transition en css, tener cuidado de poner all, especificar a donde se aplicará
+
+
