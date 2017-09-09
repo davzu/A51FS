@@ -17,15 +17,29 @@ div.mascara {
 	position: relative;
 }
 
-div.segundero{
+div.manecilla {
 	position: absolute;
+	transform-origin: left center;
 	top: 198px; /* no es 200 px porque hay que considerar la altura*/
 	left: 195px;
-	width: 190px;
 	height: 4px;
-	background: linear-gradient(red, orange);
-	transform-origin: left center;
-	transform: rotate(-90deg)
+	transform: rotate(-90deg);
+	transition: transform 1s linear;
+}
+
+div.manecilla.segundero{
+	width: 190px;
+	background-color: red;
+}
+
+div.manecilla.minutero{
+	width: 140px;
+	background-color: greenyellow;
+}
+
+div.manecilla.horario{
+	width: 90px;
+	background-color: orange;
 }
 
 
