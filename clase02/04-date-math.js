@@ -9,7 +9,7 @@ console.log(fechaNavidad);
 const redondear = Math.round(4.5) // 5
 console.log(redondear);
 
-const piso = Math.floor(8.999999); // 10 Trunca toda la parte decimal, retorna la parte entera
+const piso = Math.floor(10.999999); // 10 Trunca toda la parte decimal, retorna la parte entera
 console.log(piso);
 
 const limiteSuperior01 = Math.ceil(10.0000000001) // 11 Retorna el entero superior sin importar la parte decimal
