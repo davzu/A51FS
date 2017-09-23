@@ -1,0 +1,11 @@
+Situarse en el directorio donde se encuentra package.json
+ejecutar
+>npm install
+
+En el mismo directorio donde también se debe encontrar el archivo servidor.js ejecutar
+>node servidor.js
+De esta forma se correrá un servidor en node
+
+jwt.io
+
+inspeccionar>application>localStorage>buscarDominio
