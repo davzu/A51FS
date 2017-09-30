@@ -4,4 +4,54 @@ npm i -g firebase-tools
 >firebase init
 >firebase deploy
 
+========== angular
+página angular cli => cli.angular.io
+
+Instalar angular cli
+>npm i -q @angular/cli
+
+Crear proyecto en angular / ubicarse en un directorio donde se trabajará el proyecto
+>ng new appInicio
+Se creará el proyecto appInicio y descargará los archivos necesarios
+El archivo de configuración de angularCli es .angular-cli.json allí se define el puerto entre otros
+
+Angular inicia de la siguiente forma:
+
+src/main.ts => llama a:
+	app/app.module.ts => llama a:
+		app.component.ts
+
+Estas configuraciones se puede modificar
+
+Para compilar el proyecto angularCli debemos ubicarnos en la raíz y ejecutar el comando
+>ng serve
+Para visualizar la página index.html ejecutar desde un navegador
+localhost:4200
+
+========== componentes en angular
+Al menos se deben crear 3 archivos
+.ts => La clase donde donde se especificarán la configuración del componentes
+.html => Lo que mostrará el componente al ser llamado
+.css => Los estilos que usará el componente
+
+========== generador de componentes del angularCli
+Los componentes se crean con el siguiente comando
+Manera larga
+>ng generate component listado
+Manera corta
+>ng g c listado
+
+Además esos archivos se crean en una carpeta y lo asocian en app.module.ts
+Si se quiere crear un componente dentro de un directorio en espcífico
+>ng g c listado/formulario
+
+// >npm install ... --save => save indica que cuando se pase a producción se incluirá
+// >npm install ... --save-dev => devsave indica que cuando se pase a producción no se incluirá
+
+========== interpolación angular {{}} // la interpolación es dentro de una etiqueta
+<h1>{{titulo}}</h1>
+titulo es un atributo de la clase del componente
+
+
+// en el index.html => base="/" modificar para indicar donde está el proyecto
 
