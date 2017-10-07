@@ -8,7 +8,7 @@ npm i -g firebase-tools
 página angular cli => cli.angular.io
 
 Instalar angular cli
->npm i -q @angular/cli
+>npm i -g @angular/cli
 
 Crear proyecto en angular / ubicarse en un directorio donde se trabajará el proyecto
 >ng new appInicio
@@ -44,6 +44,8 @@ Manera corta
 Además esos archivos se crean en una carpeta y lo asocian en app.module.ts
 Si se quiere crear un componente dentro de un directorio en espcífico
 >ng g c listado/formulario
+Para no incluir pruebas unitarias
+>ng g c listado/formulario --spec false
 
 // >npm install ... --save => save indica que cuando se pase a producción se incluirá
 // >npm install ... --save-dev => devsave indica que cuando se pase a producción no se incluirá
@@ -54,4 +56,19 @@ titulo es un atributo de la clase del componente
 
 
 // en el index.html => base="/" modificar para indicar donde está el proyecto
+// extension de chrome angular augury / inspect=>pestaña augury
 
+========== crear clase con ngcli
+>ng g class <nombreClase>
+
+========== aplicar estilos con angular
+[style] => se aplica el estilo directamente
+[style]="{background: 'red'}"
+
+[ngStyle] => se puede llamar a métodos para que retornen el estilo
+[ngStyle]="{background: obtenerColorFondo()}"
+
+[ngClass] => hace referencia a la clase de la hoja de estilos css
+ngClass]="{activo: elemento.estado.toLowerCase() == 'activo', noactivo: elemento.estado.toLowerCase() != 'activo'}"
+
+//shadow-root

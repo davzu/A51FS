@@ -1,0 +1,11 @@
+<div class="card">
+	<h2>Listado de Libros</h2>
+	<div class="card-body">
+		<!--<app-formulario (nuevoServer)="nuevoServidor($event)"></app-formulario>-->
+		<app-formulario-libro></app-formulario-libro>
+		<ul class="list-group">
+			<app-libro *ngFor="let libro of lstLibros" [item]="libro"></app-libro>
+		</ul>
+
+	</div>
+</div>

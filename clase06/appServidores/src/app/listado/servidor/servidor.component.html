@@ -1,0 +1,7 @@
+<!--<li class="list-group-item" [ngStyle]="{background: obtenerColorFondo(), color: obtenerColorLetra()}" >
+  {{elemento.nombre}}
+</li>-->
+
+<li class="list-group-item" [ngClass]="{activo: elemento.estado.toLowerCase() == 'activo', noactivo: elemento.estado.toLowerCase() != 'activo'}">
+	{{elemento.nombre}}
+</li>

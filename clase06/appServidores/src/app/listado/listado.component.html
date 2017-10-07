@@ -1,0 +1,10 @@
+<div class="card">
+	<h2>Listado de Servidores</h2>
+	<div class="card-body">
+		<app-formulario (nuevoServer)="nuevoServidor($event)"></app-formulario>
+		<ul class="list-group">
+			<app-servidor *ngFor="let servidor of lista" [item]="servidor" (click)="servidorSeleccionado(servidor)"></app-servidor>
+		</ul>
+
+	</div>
+</div>
