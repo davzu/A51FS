@@ -8,7 +8,7 @@ import { Pelicula } from '../compartido/pelicula'
 })
 export class DetalleComponent implements OnInit {
 
-	@Input() pela: Pelicula;
+	//@Input() pela: Pelicula;
 
 	constructor() { }
 

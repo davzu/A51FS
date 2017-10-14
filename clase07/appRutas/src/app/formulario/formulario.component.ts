@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { PeliculasService } from '../../peliculas.service'
-import { Pelicula } from '../../compartido/pelicula'
+import { PeliculasService } from '../peliculas.service'
+import { Pelicula } from '../compartido/pelicula'
 
 @Component({
 	selector: 'app-formulario',
