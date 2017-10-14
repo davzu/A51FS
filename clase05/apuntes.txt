@@ -87,3 +87,8 @@ Crear directiva por comando
 // Todos los decoradores empiezan con @  y amplían la propiedad de un atributo
 
 // @HostBinding => monitorear cambios en las propiedades
+
+========== servicios
+Los servicios en el app.module se importa en Providers
+Crear servicio por comando
+>ng g s peliculas
