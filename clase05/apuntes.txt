@@ -72,3 +72,18 @@ titulo es un atributo de la clase del componente
 ngClass]="{activo: elemento.estado.toLowerCase() == 'activo', noactivo: elemento.estado.toLowerCase() != 'activo'}"
 
 //shadow-root
+
+========== directivas
+Las directivas siempre se aplican sobre un elemento
+Debo indicar a angular que la directiva existe, ir al app.module.ts e importarlo
+
+Crear directiva por comando
+>ng g d directivaAvanzada
+
+
+// Si queremos que sea dinámica (se ejecute algún script, método), encerrarlo con corchetes 
+//<componente-abc [propiedad]="" >
+
+// Todos los decoradores empiezan con @  y amplían la propiedad de un atributo
+
+// @HostBinding => monitorear cambios en las propiedades

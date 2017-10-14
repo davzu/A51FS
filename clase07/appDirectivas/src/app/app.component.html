@@ -1,0 +1,13 @@
+<div directiva-basica>
+	Texto cualquiera
+
+	<!--<article appDirectivaAvanzada colorPorDefecto="green" colorHover="orange">-->
+	<article appDirectivaAvanzada="red" colorPorDefecto="green" colorHover="orange" (fechaHoy)="mostrarFecha($event)">
+		Otro texto cualquiera
+	</article>
+</div>
+
+<div>
+	<input type="text" placeholder="Ingrese el departamento" appDirectivaLista>
+	<select id="listDepartamentos"></select>
+</div>
