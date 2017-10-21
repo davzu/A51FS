@@ -92,3 +92,25 @@ Crear directiva por comando
 Los servicios en el app.module se importa en Providers
 Crear servicio por comando
 >ng g s peliculas
+
+========== rutas (Router)
+en app.module
+import { RouterModule, Routes} from '@angular/router';
+
+Routes => un array de json para definir las rutas
+const rutas: Routes = [
+	{ path: "", component: ListadoComponent },
+	{ path: "nuevo", component: NuevoComponent },
+	{ path: "detalle", component: DetalleComponent },
+	// { path: "**", component: ListadoComponent } // ruta por defecto
+	{ path: "**", component: redirecTo: "/" } // redirecciona
+];
+
+en imports añadirlo => RouterModule
+RouterModule.forRoot(rutas) => está cargando todas las rutas definidas en el array rutas
+
+// La idea de las cabeceras es que se trabaje como SPA
+routerLink => Nos sirve para cargar la ruta sin cargar toda la página
+
+// incluir bootstrap => npm install bootstrap@4.0.0-beta.2 --save
+
