@@ -114,3 +114,5 @@ routerLink => Nos sirve para cargar la ruta sin cargar toda la página
 
 // incluir bootstrap => npm install bootstrap@4.0.0-beta.2 --save
 
+ng g m tipos --routing true
+ng g c tipos/listado --spec false
