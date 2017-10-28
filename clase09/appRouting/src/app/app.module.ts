@@ -4,6 +4,8 @@ import {ApproutingModule} from './app.routing.module'
 
 import { AppComponent } from './app.component';
 import { CabeceraComponent } from "app/cabecera/cabecera.component";
+import { SeguridadService } from "app/auth/seguridad.service";
+import { ServidoresService } from "app/servidores/servidores.service";
 
 
 @NgModule({
@@ -15,7 +17,7 @@ import { CabeceraComponent } from "app/cabecera/cabecera.component";
 		BrowserModule,
 		ApproutingModule
 	],
-	providers: [],
+	providers: [ServidoresService, SeguridadService],
 	bootstrap: [AppComponent]
 })
 export class AppModule { }

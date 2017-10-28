@@ -44,7 +44,7 @@ const rutas: Routes = [
 		FormsModule
 	],
 	exports: [RouterModule],
-	providers: [ServidoresService, SeguridadService, SeguridadGuard, AutenticacionGuard, AutorizacionGuard, GuardadoGuard]
+	providers: [AutenticacionGuard, AutorizacionGuard, GuardadoGuard]
 })
 export class ApproutingModule {
 
