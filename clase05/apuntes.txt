@@ -116,3 +116,21 @@ routerLink => Nos sirve para cargar la ruta sin cargar toda la página
 
 ng g m tipos --routing true
 ng g c tipos/listado --spec false
+
+========== Observables
+observador cada 1 segundo
+let numeros = Observable.interval(1000);
+numeros.subscribe(
+			num => {
+				console.log(num);
+			}
+		);
+
+// reactiveXS => no es propio de angular
+// es la competencia de las promesas
+
+// playgroun nativescript
+// macincloud
+
+
+
