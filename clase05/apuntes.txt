@@ -113,6 +113,7 @@ RouterModule.forRoot(rutas) => está cargando todas las rutas definidas en el ar
 routerLink => Nos sirve para cargar la ruta sin cargar toda la página
 
 // incluir bootstrap => npm install bootstrap@4.0.0-beta.2 --save
+.angular-cli.json / style => "../node_modules/bootstrap/dist/css/bootstrap.min.css"
 
 ng g m tipos --routing true
 ng g c tipos/listado --spec false
@@ -132,5 +133,45 @@ numeros.subscribe(
 // playgroun nativescript
 // macincloud
 
+// forRoot solo se utiliza 1 vez, crea rutas. Considerado en el modulo de ruta principal
+// forChild no crea rutas, solo las añade
+// loadChildren carga lo que se necesite
+
+RouterModule.forRoot(rutas, {preloadingStrategy: PreloadAllModules})
+// hace una carga de todos los módulos así estén separados
+
+// Los servicios se recomiendan no tenerlos por separados
+
+// Los observables responde al paradigma de programación reactiva, no es exclusivo de angular
+En los observables, cuando se cumple se usa next, caso contrario error, complete es en ambos casos
+Los observables a diferencia de las promesas se pueden ejecutar muchas veces.
+Los observables también se pueden convertir en promesas.
+
+Con error y complete se culmina el observable
+
+observador.subscribe(
+			(data:string) => console.log(data), // 1er argumento para next, el error no será capturado
+			(data:string) => console.log(data), // 2do argumento para error, el error es capturado
+			() => console.log("Se completo") // 3er argumento para complete
+);
+
+*****
+
+const observador: Observable<number> = Observable.interval(1000);
+// importar manualmente => import 'rxjs/Rx'
 
 
+====== trabajando con api rest clase10
+>sudo npm i -g sails
+dentro de servidor ejecutar
+>npm install
+
+levantar servidor (ubicarse en servidor)
+>sails lift
+por debajo ejecuta >node app
+
+
+<form class="form-signin" (ngSubmit)="registrar()" #formulario>
+    <button class="btn btn-lg btn-primary btn-block" type="submit" [disable]="!formulario.valid">Registrar</button>
+
+#formulario => variable de plantilla
