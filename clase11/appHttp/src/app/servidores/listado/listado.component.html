@@ -1,0 +1,17 @@
+<table class="table table-striped">
+	<thead>
+		<tr>
+			<th>ID</th>
+			<th>Nombre</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr *ngFor="let servidor of servidores">
+			<td>{{servidor.idServidor}}</td>
+			<td>{{servidor.nombre}}</td>
+			<button class="btn btn-default">Editar</button>
+			<button class="btn btn-warning">Eliminar</button>
+		</tr>
+	</tbody>
+</table>
+<button class="btn btn-success" (click)="nuevo()">Nuevo servidor</button>

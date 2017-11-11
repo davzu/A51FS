@@ -175,3 +175,25 @@ por debajo ejecuta >node app
     <button class="btn btn-lg btn-primary btn-block" type="submit" [disable]="!formulario.valid">Registrar</button>
 
 #formulario => variable de plantilla
+
+
+canActivate
+canDeactivate
+canChildren
+canLoad
+
+========== Interceptores
+Interpcetores --> Petición --> clonan --> headers
+
+========== Sails
+>sails new appRest
+
+crear un modelo
+>sails generate model cursos
+=> retorna la ruta donde se creó el modelo
+
+config/connections.js
+usaremos mongo
+>npm install sails-mongo
+
+se usará mlab
