@@ -197,3 +197,5 @@ usaremos mongo
 >npm install sails-mongo
 
 se usará mlab
+otros => cloud mongo
+visualizar => robomongo, mongo compass
