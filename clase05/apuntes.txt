@@ -190,7 +190,13 @@ Interpcetores --> Petición --> clonan --> headers
 
 crear un modelo
 >sails generate model cursos
+>sails generate controller cursos
 => retorna la ruta donde se creó el modelo
+
+ó
+
+>sails generate api cursos
+
 
 config/connections.js
 usaremos mongo
