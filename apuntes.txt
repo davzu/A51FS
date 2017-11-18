@@ -205,3 +205,31 @@ usaremos mongo
 se usará mlab
 otros => cloud mongo
 visualizar => robomongo, mongo compass
+
+
+========== Angular Material
+https://material.angular.io/
+
+========== producción
+
+angularJS => se suben todos los archivos, los errores podrían salir para el usuario
+angular 2 => cuando se compila se verifican los errores
+>ng build --prod => por defecto JIT (Just In Time)
+>ng build --prod --aot
+
+angular 4, 5 =>
+>ng build --prod => por default AOT (Ahead Of Time)
+
+AOT => se compila y cuando se llama a la página web se descargan los compilados
+Si solamente se llama a >ng build compila los archivos y genera nuevos archivos con nombres definidos
+Si ejecutamos >ng build --prod compila los archivos y genera nuevos archivos con nombres aleatorios, de ese modo cuando el usuario llame a la página web se cargarán nuevamente los archivos sin tomar los que están en cache.
+
+// web server for chrome (extensión)
+
+Cuando termine de compilarse, se debe modificar el archivo index.html donde indica el directorio base para que llame a los demás recursos con la ubicación respectiva.
+Para no tener que hacerlo manualmente, se define parámetros
+>ng build --base-href /myurl/
+ó
+>ng build --bh /myurl/
+
+
