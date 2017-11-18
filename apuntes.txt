@@ -232,4 +232,7 @@ Para no tener que hacerlo manualmente, se define parámetros
 ó
 >ng build --bh /myurl/
 
+//cuando se usa api rest se hace 2 llamadas, una al método en sí y otra al options para saber sobre los métodos disponibles, cabecera, etc. Hay veces en las que no se hace la llamada a options.
+// CORS (Cross Origin Resource Sharing)
+// Se debe indicar al servicio los dominios que están permitidos para consumirlo
 
