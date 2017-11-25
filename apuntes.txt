@@ -236,3 +236,31 @@ Para no tener que hacerlo manualmente, se define parámetros
 // CORS (Cross Origin Resource Sharing)
 // Se debe indicar al servicio los dominios que están permitidos para consumirlo
 
+
+========== node
+>npm install -g ts-node
+
+// crear package.json
+>npm init
+
+// descargar node_modules
+>npm i @types/node --save
+
+
+========== ExpressJS
+>npm i express --save
+
+//el ExpressJS viene con un generador
+
+para reducir la cantidad de errores
+>npm i @types/express --save
+
+para indicarle al node que trabaje con el ExpressJS añadir en el archivo tsconfig.ts , en types "express"
+
+========== Preprocesadores html para ExpressJS
+PUG, EJS, HANDLEBARS, WINGS, HTML
+
+instalar PUG
+>npm i pug --save
+
+
