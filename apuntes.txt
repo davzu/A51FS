@@ -263,4 +263,27 @@ PUG, EJS, HANDLEBARS, WINGS, HTML
 instalar PUG
 >npm i pug --save
 
+========== creación comandos
+en el archivo package.json, en scripts hemos añadido start
+"scripts": {
+	  "start": "ts-node src/servidor",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
 
+para ejecutarlo
+>npm start
+
+nodemon nos ayudará a reiniciar el servidor cuando haya cambios
+para facilitarnos crearemos el archivo nodemon.js
+
+>npm run watch => revisa el watch del package.json
+
+===
+>npm i body-parser --save
+>npm i method-override --save
+
+// pintar peticiones http en log
+>npm i morgan --save
+
+=== driver para mongoDB
+>npm i mongoose @types/mongoose --save
