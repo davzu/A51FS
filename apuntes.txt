@@ -287,3 +287,23 @@ para facilitarnos crearemos el archivo nodemon.js
 
 === driver para mongoDB
 >npm i mongoose @types/mongoose --save
+
+===
+librería para cargar variables de entorno desde un archivo
+>npm i dotenv —-save
+
+librería para cargar íconos
+>npm i serve-favicon --save
+
+
+// fuse angular material
+
+manejo de sesiones
+>npm i express-session --save
+
+>nodemon
+
+// js, pero no lo soporta aún los navegadores, es soportado por node
+async
+await => trabaja con promesas
+
